@@ -24,3 +24,7 @@ ip2region库商业版本更多丰富的字段适配
 ### 记录一下
 github上有个ip2region-es-ingest-pipeline属于在es插件层面适配ip2region,不过没有进行测试，看未来需要可以进行参考
 https://github.com/yongplus/ip2region-es-ingest-pipeline
+
+### 更新进展
+发现logstash-filter-ip2location组件以及ip2location库，开源版本的ip解析比较丰富，且有geo能力\
+目前正在逐步转移至ip2location库，logstash的filter中将他独有的数据结构转换和原本maxMind解析完的尽可能一致,减少其他服务和组件的修改成本
